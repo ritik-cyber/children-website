@@ -1,0 +1,557 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custome style  */
+/* body {
+  margin-bottom: 3rem;
+} */
+html {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 0; */
+  /* margin: 0 auto; */
+  gap: 1rem 0;
+}
+.box-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.flex-48 {
+  flex: 0 1 48%;
+}
+.spc-btw {
+  justify-content: space-between;
+}
+.ali-cntr {
+  align-items: center;
+}
+/* header */
+.header {
+  background: linear-gradient(to right, #1277e4, #7ef364);
+}
+.heading {
+  padding: 1rem 0;
+}
+h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
+}
+.nav a {
+  margin-right: 2rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+/* section */
+.car-game {
+  background: url(../assets/pexels-photo-158971.jpeg) no-repeat;
+  /* height: 350px; */
+  grid-column: span 2;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  /* animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: show; */
+}
+
+.car-para {
+  background: rgb(230, 205, 205);
+  grid-column: span 2;
+  /* animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: show; */
+}
+.car-para h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+.car-para h3 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  line-height: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.down-arrow {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  color: black;
+}
+.down-arrow:hover ~ p {
+  display: inline-block;
+  /* height: 100px; */
+}
+.car-para p {
+  display: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: black;
+}
+
+.margin {
+  margin: 1rem 0;
+  margin-bottom: 4rem;
+}
+.btn {
+  background-color: rgb(230, 205, 205);
+  padding: 1rem 1.7rem;
+  display: block;
+  color: black;
+  margin: 1rem 1rem 1rem 0;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+.btn:hover {
+  background-color: darkslategray;
+  color: #fff;
+  border: none;
+}
+
+.tekken-game {
+  background: url(../assets/images.jpeg) no-repeat;
+  /* height: 350px; */
+  grid-column: span 2;
+  /* background-position: center; */
+  background-size: cover;
+  width: 100%;
+}
+.tekken-para {
+  background: rgb(230, 205, 205);
+  grid-column: span 2;
+}
+.span1 {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+.tekken-para h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+.tekken-para h3 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  line-height: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.tekken-para p {
+  display: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: black;
+}
+
+/* mario game */
+
+.mario-game {
+  background: url(../assets/mario.jpeg) no-repeat;
+  /* height: 300px; */
+  grid-column: span 2;
+  /* background-position: center; */
+  background-size: cover;
+  width: 100%;
+}
+.mario-para {
+  background: rgb(230, 205, 205);
+  grid-column: span 2;
+}
+.mario-para h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+.top {
+  margin-top: 2rem;
+}
+.mario-para h3 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  line-height: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.mario-para p {
+  display: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: black;
+}
+
+/* 8 ball pool */
+
+.pool-game {
+  background: url(../assets/pool.jpeg) no-repeat;
+  /* height: 300px; */
+  grid-column: span 2;
+  background-position: center;
+  background-size: cover;
+  /* width: 100%; */
+}
+.pool-para {
+  background: rgb(230, 205, 205);
+  grid-column: span 2;
+}
+.pool-para h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+
+.pool-para h3 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  line-height: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.pool-para p {
+  display: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: black;
+}
+
+/* about page */
+.space {
+  margin-top: 4rem;
+}
+
+.about-para h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: darkolivegreen;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+.about-para p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 1rem 0;
+}
+.hand-game {
+  background-color: green;
+  height: 500px;
+  width: 500px;
+  border-radius: 1rem;
+  position: relative;
+}
+.ball {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  /* animation: box 2s ease-in-out infinite; */
+}
+.ball1 {
+  background-color: hotpink;
+}
+@keyframes box {
+  0% {
+    top: 0;
+    bottom: 100%;
+  }
+  100% {
+    top: 100%;
+    bottom: 0%;
+  }
+}
+
+/* section  */
+
+.more-para h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  text-transform: capitalize;
+  margin: 1rem 0;
+  /* text-align: center; */
+}
+.more-para p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 1rem 0;
+}
+
+/* footer */
+
+.footer {
+  background: linear-gradient(to right, #414141, #020202);
+  /* width: 100%; */
+  padding: 2rem;
+  /* margin-top: 5rem; */
+}
+.footer-para p {
+  width: 400px;
+  color: #fff;
+  line-height: 1.8rem;
+}
+.footer-para h1 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-ol h1 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.footer-ol li {
+  color: #fff;
+  line-height: 1.8rem;
+}
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.last-footer {
+  padding: 40px 0;
+}
+.footer-para-1 {
+  color: #fff;
+  padding: 30px 0;
+}
+.footer-para-1 p {
+  margin-left: 400px;
+}
+.icon-facebook {
+  margin-right: 150px;
+}
+.icon-facebook {
+  margin-left: 15rem;
+}
+.icon-1 {
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/* contact */
+
+.contact h2 {
+  font-size: 5rem;
+  color: cadetblue;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 2rem 0;
+}
+
+.contact-section {
+  background: linear-gradient(to right, #1277e4, #7ef364);
+  /* padding-bottom: 100px; */
+  margin-top: 30px;
+}
+.section-h1-1 {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 34px;
+  color: #fff;
+}
+
+.message {
+  width: 300px;
+  height: 50px;
+  background-color: #fff;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.message-2 {
+  width: 600px;
+  height: 100px;
+  background-color: #fff;
+  color: grey;
+  padding: 10px;
+  border-radius: 4px;
+}
+.contact-us p {
+  padding: 10px;
+  color: grey;
+}
+.btn-1 {
+  width: 200px;
+  padding: 12px;
+  background-color: crimson;
+  margin-top: 10px;
+  border: 1px solid crimson;
+  border-radius: 50px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    /* width: 100%; */
+  }
+  .item {
+    grid-column: span 1;
+  }
+  /* .nav {
+    flex-direction: column;
+  } */
+}
